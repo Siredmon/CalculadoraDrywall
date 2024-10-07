@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina padding predeterminado */
+}
+
+.container {
+    display: flex; /* Uso de flexbox para dividir en dos secciones */
+    justify-content: space-between; /* Espaciado entre secciones */
+    max-width: 1200px; /* Ancho máximo de la caja */
+    margin: 20px auto; /* Centro en la pantalla con margen */
+    padding: 20px; /* Padding para separar el contenido de los bordes */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con un poco de transparencia */
+    border-radius: 8px; /* Bordes redondeados para la caja */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.input-section {
+    flex: 1; /* La sección de entrada ocupa la mitad */
+    margin-right: 20px; /* Espaciado entre secciones */
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Padding para separar el contenido de los bordes */
+}
+
+.insumos-section {
+    flex: 2; /* La sección de insumos ocupa más espacio */
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Padding para separar el contenido de los bordes */
+}
+
+.insumo {
+    border: 1px solid #ccc; /* Borde para cada insumo */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Padding interno */
+    margin: 10px 0; /* Espaciado entre insumos */
+    display: flex; /* Flex para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.insumo h3 {
+    margin: 0; /* Eliminar margen de los títulos */
+    flex: 1; /* Hacer que el título ocupe el espacio restante */
+}
+
+h1 {
+    color: #2980b9; /* Azul oscuro */
+    text-align: center;
+}
+
+h2 {
+    color: #e67e22; /* Naranja */
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="number"], input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #27ae60; /* Verde */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #219653; /* Verde más oscuro */
+}
+
+.producto-imagen {
+    width: 50px; /* Ajustar tamaño de las imágenes */
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Estilo para pantallas más grandes */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column; /* Cambiar a columna para móviles */
+    }
+
+    .input-section,
+    .insumos-section {
+        margin-right: 0; /* Eliminar margen en móviles */
+        margin-bottom: 20px; /* Separar secciones verticalmente */
+    }
+}
